@@ -1,0 +1,26 @@
+.image-contanier {
+    background-image: url('https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: full;
+    height: 80vh;
+    margin-top: 4rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-class {
+    margin: 3%;
+    width: 20%;
+    float: left;
+
+    .card-content {
+        text-align: left;
+    }
+}
