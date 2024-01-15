@@ -1,7 +1,33 @@
-<div class="image-contanier">
-
+<div class="image-contanier"></div>
+<div class="main-title">
+    <div class="title">
+        DishDiscovery
+    </div>
+    <div class="subtitle">
+        "From Kitchen Creations to International Flavors"
+    </div>
 </div>
-<ng-container class="container">
+
+
+<div class="hero-container">
+    <div class="hero-content">
+        <h3>DISHDISCOVERY</h3>
+        <h4>
+            "Savor the Journey: A Culinary Exploration on DishDiscovery"
+        </h4>
+        <div class="hero-buttons">
+            <a mat-raised-button color="accent" routerLink="recipies" routerLinkActive="active"
+                [routerLinkActiveOptions]={exact:true}>Get All Recipes</a>
+            <a mat-raised-button color="accent" routerLink="create" routerLinkActive="active"
+                [routerLinkActiveOptions]={exact:true}>Upload Your Own Recipe</a>
+        </div>
+    </div>
+    <div class="image-slider-container">
+        <app-courosel [images]="images"></app-courosel>
+    </div>
+</div>
+
+<div container class="container">
     <mat-card class="card-class">
         <mat-card-header>
             <mat-card-title>
@@ -16,10 +42,10 @@
             alt="burger-image" />
         <mat-card-content class="card-content">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi, illum ut consequuntur libero
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi, illum ut consequuntur
+                libero
                 nobis
-                aspernatur, labore consequatur id minus deserunt explicabo praesentium illo unde veritatis temporibus!
-                Officiis, itaque nobis.
+                aspernatur, labore consequatur id minus deserunt explicabo praesentium illo
             </p>
         </mat-card-content>
         <mat-card-actions>
@@ -27,4 +53,79 @@
         </mat-card-actions>
         <mat-card-footer></mat-card-footer>
     </mat-card>
-</ng-container>
+    <mat-card class="card-class">
+        <mat-card-header>
+            <mat-card-title>
+                Amazing Burger recipe
+            </mat-card-title>
+            <mat-card-subtitle>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quidem?
+            </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image
+            src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="burger-image" />
+        <mat-card-content class="card-content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi, illum ut consequuntur
+                libero
+                nobis
+                aspernatur, labore consequatur id minus deserunt e Lorem ipsum dolor sit amet.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button><mat-icon>thumb_up</mat-icon>Like</button>
+        </mat-card-actions>
+        <mat-card-footer></mat-card-footer>
+    </mat-card>
+    <mat-card class="card-class">
+        <mat-card-header>
+            <mat-card-title>
+                Amazing Burger recipe
+            </mat-card-title>
+            <mat-card-subtitle>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quidem?
+            </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image
+            src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="burger-image" />
+        <mat-card-content class="card-content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi, illum ut consequuntur
+                libero
+                nobis
+                aspernatur, labore consequatur id minus deserunt explicabo praesentium illo
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button><mat-icon>thumb_up</mat-icon>Like</button>
+        </mat-card-actions>
+        <mat-card-footer></mat-card-footer>
+    </mat-card>
+    <mat-card class="card-class">
+        <mat-card-header>
+            <mat-card-title>
+                Amazing Burger recipe
+            </mat-card-title>
+            <mat-card-subtitle>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quidem?
+            </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image
+            src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="burger-image" />
+        <mat-card-content class="card-content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi, illum ut consequuntur
+                libero
+                nobis
+                aspernatur, lais.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button><mat-icon>thumb_up</mat-icon>Like</button>
+        </mat-card-actions>
+        <mat-card-footer></mat-card-footer>
+    </mat-card>
+</div>

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule, Routes } from '@angular/router';
+import { CouroselComponent } from './courosel/courosel.component';
+import { FormsModule } from '@angular/forms';
+import { SearchComponent } from './components/search/search.component';
+import { AllBlogsComponent } from './components/all-blogs/all-blogs.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 const appRoute: Routes = [
@@ -22,6 +27,7 @@ const appRoute: Routes = [
   { path: "create", component: CreateComponent },
   { path: "connect", component: ConnectComponent },
   { path: "signup", component: SignupComponent },
+  { path: "search", component: AllBlogsComponent },
 ];
 @NgModule({
   declarations: [
@@ -32,12 +38,15 @@ const appRoute: Routes = [
     SignupComponent,
     ConnectComponent,
     CreateComponent,
+    SearchComponent,
+    AllBlogsComponent,
+    FooterComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, MatToolbarModule, MatButtonModule, MatIconModule,
-    RouterModule.forRoot(appRoute), MatCardModule
+    RouterModule.forRoot(appRoute), MatCardModule, CouroselComponent, HammerModule, FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
