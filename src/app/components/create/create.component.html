@@ -1,30 +1,53 @@
-<body>
-  <div class="container">
-      <form>
-          <h1>Post a Recipe</h1>
-          <p>
-              <label for="recipeTitle">Recipe Title</label>
-              <input type="text" id="recipeTitle" [(ngModel)]="recipe.title"/>
-          </p>
-          <p>
-              <label for="recipeDescription">Recipe Description</label>
-              <input type="text" id="recipeDescription" [(ngModel)]="recipe.description"/>
-          </p>
-          <p>
-              <label for="recipeIngredients">Recipe Ingredients</label>
-              <input type="text" id="recipeIngredients" [(ngModel)]="recipe.ingredients"/>
-          </p>
-          <p>
-              <label for="recipeMethod">Recipe Method</label>
-              <input type="text" id="recipeMethod" [(ngModel)]="recipe.method"/>
-          </p>
-          <p>
-              <label for="cookingTime">Cooking time</label>
-              <input type="text" id="cookingTime" [(ngModel)]="recipe.cookingTime"/>
-          </p>
-          <p>
-              <label for="imageInput">Upload Picture</label>
-              <input type="file" id="imageInput" accept="image/*" [(ngModel)]="recipe.imageInput">
-          </p>
-          <button id="publish">Publish</button>
-      </form>
+<!-- create.component.html -->
+
+<div class="container">
+    <form (submit)="createRecipe()">
+      <h1>Post a Recipe</h1>
+      <p>
+        <label for="recipeTitle">Recipe Title</label>
+        <input type="text" id="recipeTitle" [(ngModel)]="recipe.recipeTitle" />
+      </p>
+      <p>
+        <label for="recipeDescription">Recipe Description</label>
+        <input type="text" id="recipeDescription" [(ngModel)]="recipe.recipeDesc" />
+      </p>
+      <p>
+        <label for="recipeIngredients">Recipe Ingredients</label>
+        <input type="text" id="recipeIngredients" [(ngModel)]="recipe.recipeIngridents" />
+      </p>
+      <p>
+        <label for="recipeMethod">Recipe Method</label>
+        <input type="text" id="recipeMethod" [(ngModel)]="recipe.recipeMethod" />
+      </p>
+      <p>
+        <label for="cookingTime">Cooking time</label>
+        <input type="text" id="cookingTime" [(ngModel)]="recipe.recipeCookingTime" />
+      </p>
+      <p>
+        <label for="imageInput">Upload Picture</label>
+        <input type="text" id="imageInput" [(ngModel)]="recipe.recipeImageUrl" />
+      </p>
+      <p>
+        <label for="tags">Tags</label>
+        <input type="text" id="tags" [(ngModel)]="recipe.tags" />
+      </p>
+      <button type="submit" id="publish">Publish</button>
+    </form>
+  
+    <div class="side-content">
+      <h2>See how</h2><br><h2>others have Posted</h2>
+      <div class="image-container">
+        <img src="assets/img1.jpg" alt="Sample Image">
+        <p>Text below Image 1</p>
+      </div>
+      <div class="image-container">
+        <img src="assets/img1.jpg" alt="Sample Image">
+        <p>Text below Image 2</p>
+      </div>
+      <div class="image-container">
+        <img src="assets/img1.jpg" alt="Sample Image">
+        <p>Text below Image 3</p>
+      </div>
+    </div>
+  </div>
+  

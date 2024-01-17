@@ -19,7 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './components/search/search.component';
 import { AllBlogsComponent } from './components/all-blogs/all-blogs.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { HttpClientModule } from '@angular/common/http'; 
 
 const appRoute: Routes = [
   { path: "", component: HerosectionComponent },
@@ -46,7 +46,7 @@ const appRoute: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule, MatToolbarModule, MatButtonModule, MatIconModule,
-    RouterModule.forRoot(appRoute), MatCardModule, CouroselComponent, HammerModule, FormsModule,
+    RouterModule.forRoot(appRoute), MatCardModule, CouroselComponent, HammerModule, FormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
