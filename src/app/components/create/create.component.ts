@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./create.component.scss']
 })
 export class CreateComponent {
+  recipe = {
+    id:'',
+    title: '',
+    description: '',
+    ingredients:'',
+    method:'',
+    cookingTime:'',
+    imageInput:''
+  };
 
 }
